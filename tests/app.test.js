@@ -20,3 +20,11 @@ describe("Test the status path", () => {
         expect(response.body).toEqual({ status: "API is running" });
     });
 });
+
+describe("Test the version path", () => {
+    test("It should response with JSON containing API version", async () => {
+        const response = await request(app).get("/version")
+        expect(response.statusCode).toBe(200);
+        expect(response.body).toEqual({ version: "1.0.1" });
+    });
+});
