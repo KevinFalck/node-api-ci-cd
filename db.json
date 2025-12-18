@@ -1,0 +1,20 @@
+[
+    {
+        "id": 1,
+        "content": "Just started using Whispering! This is awesome.",
+        "author": "Alice",
+        "createdAt": "2025-12-18T10:00:00Z"
+    },
+    {
+        "id": 2,
+        "content": "Node.js is so powerful for building real-time apps.",
+        "author": "Bob",
+        "createdAt": "2025-12-18T11:30:00Z"
+    },
+    {
+        "id": 3,
+        "content": "Learning CI/CD today. It's a game changer!",
+        "author": "Charlie",
+        "createdAt": "2025-12-18T12:00:00Z"
+    }
+]
