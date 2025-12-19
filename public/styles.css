@@ -8,16 +8,18 @@ body {
 }
 
 header {
-    background-color: #4a148c; /* Dark Purple */
+    background-color: #4a148c;
+    /* Dark Purple */
     color: white;
     padding: 1rem 2rem;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 header h1 {
     margin: 0;
     font-size: 1.5rem;
     font-weight: 700;
+    color: #ffffff;
 }
 
 main {
@@ -39,7 +41,7 @@ h1 {
     height: auto;
     border-radius: 8px;
     margin: 2rem 0;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
 h3 {

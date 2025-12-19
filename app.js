@@ -25,11 +25,11 @@ app.get("/about", (req, res) => {
 });
 
 // API Routes
-app.get("/api/whispers", (req, res) => {
+app.get("/api/v1/whisper", (req, res) => {
     res.json(store.getAllWhispers());
 });
 
-app.get("/api/whispers/:id", (req, res) => {
+app.get("/api/v1/whisper/:id", (req, res) => {
     const whisper = store.getWhisperById(req.params.id);
     if (whisper) {
         res.json(whisper);
@@ -38,7 +38,7 @@ app.get("/api/whispers/:id", (req, res) => {
     }
 });
 
-app.post("/api/whispers", (req, res) => {
+app.post("/api/v1/whisper", (req, res) => {
     if (!req.body.content || !req.body.author) {
         return res.status(400).json({ error: "Content and author are required" });
     }
@@ -46,7 +46,7 @@ app.post("/api/whispers", (req, res) => {
     res.status(201).json(newWhisper);
 });
 
-app.put("/api/whispers/:id", (req, res) => {
+app.put("/api/v1/whisper/:id", (req, res) => {
     const updated = store.updateWhisper(req.params.id, req.body);
     if (updated) {
         res.json(updated);
@@ -55,7 +55,7 @@ app.put("/api/whispers/:id", (req, res) => {
     }
 });
 
-app.delete("/api/whispers/:id", (req, res) => {
+app.delete("/api/v1/whisper/:id", (req, res) => {
     const deleted = store.deleteWhisper(req.params.id);
     if (deleted) {
         res.status(204).send();
